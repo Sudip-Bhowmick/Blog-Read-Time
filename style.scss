@@ -1,0 +1,37 @@
+html, body, *{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.content{
+    width: 70%;
+    padding: 15px;
+    border: 1px solid;
+    height: calc(100vh - 20px);
+    min-height: 400px;
+    overflow: auto;
+}
+.time{
+    width: 30%;
+    padding: 15px;
+}
+
+#readTime{
+    font-weight: bold;
+}
+
+@media(max-width: 767px){
+    .flex{
+        flex-direction: column;
+    }
+    .content, .time{
+        width: 100%;
+    }
+    .content{
+        height: 500px;
+    }
+}
